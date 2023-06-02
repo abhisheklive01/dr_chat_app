@@ -23,49 +23,29 @@ class DemoClass extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Center(
+        body: Container(
+      width: 300,
+      color: Colors.pink,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           Container(
-            color: Colors.pink,
-            height: 600,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  height: 60,
-                  width: 60,
-                  color: Colors.orange,
-                  alignment: Alignment.center,
-                  padding: EdgeInsets.all(10),
-                  child: Text("Hello"),
-                ),
-                Container(
-                  height: 60,
-                  width: 60,
-                  color: Colors.blue,
-                  padding: EdgeInsets.all(10),
-                  child: Text("Hello"),
-                ),
-                Container(
-                  height: 60,
-                  width: 60,
-                  color: Colors.yellow,
-                  padding: EdgeInsets.all(10),
-                  child: Text("Hello"),
-                ),
-              ],
-            ),
+            width: 100,
+            height: 100,
+            color: Colors.red,
+            child: Text("Dd"),
           ),
-          TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SecondPage()),
-                );
-              },
-              child: Text("Next"))
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.green,
+          ),
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.blue,
+          ),
         ],
       ),
     ));
